@@ -1,0 +1,49 @@
+.orders-page .action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.orders-page .action-buttons .btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+.modal-large {
+  max-width: 800px;
+}
+
+.product-item-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+
+.order-details {
+  padding: 1rem 0;
+}
+
+.detail-row {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row strong {
+  display: inline-block;
+  width: 150px;
+  color: #333;
+}
+
+.detail-section {
+  margin-top: 1.5rem;
+}
+
+.detail-section table {
+  width: 100%;
+}
+
+.detail-section tfoot {
+  background-color: #f8f9fa;
+}
+
