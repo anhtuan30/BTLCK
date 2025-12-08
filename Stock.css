@@ -1,0 +1,37 @@
+.stock-page .product-item-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+
+/* 1. Đảm bảo bảng có thanh cuộn mượt mà */
+.table-container {
+  max-height: 400px; /* Hoặc 500px tùy màn hình */
+  overflow-y: auto;  /* Cho phép cuộn dọc */
+  overflow-x: auto;  /* Cho phép cuộn ngang nếu bảng quá rộng */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+/* 2. SỬA LỖI TRÔI CHỮ: Cố định tiêu đề (Sticky Header) */
+table thead th {
+  position: sticky; /* Giữ cố định */
+  top: 0;           /* Dính chặt lên trên cùng */
+  z-index: 10;      /* Luôn nằm đè lên trên nội dung bên dưới */
+  
+  /* QUAN TRỌNG: Phải có màu nền để che chữ bên dưới */
+  background-color: #667eea; /* Màu tím/xanh giống giao diện của bạn */
+  color: white;     /* Màu chữ trắng */
+  
+  /* Thêm một chút bóng đổ cho đẹp */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+/* 3. Tinh chỉnh các ô để không bị vỡ dòng */
+table th, table td {
+  white-space: nowrap; /* Không cho xuống dòng, giữ bảng thẳng hàng */
+  padding: 12px 15px;
+  text-align: left;
+}
