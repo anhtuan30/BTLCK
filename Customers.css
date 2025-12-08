@@ -1,0 +1,10 @@
+.customers-page .action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.customers-page .action-buttons .btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+}
+
